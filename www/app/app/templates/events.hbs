@@ -1,0 +1,10 @@
+<h2>Events</h2>
+{{#if content}}
+  <ul>
+  {{#each event in content}}
+    <li>{{event.name}} -- {{event.location}}</li>
+  {{/each}}
+  </ul>
+{{else}}
+  <p> I'm sorry. There are no events available yet!</p>
+{{/if}}
