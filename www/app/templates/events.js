@@ -1,0 +1,1 @@
+export default Ember.Handlebars.compile("<h2>Events</h2>\n{{#if content}}\n  <ul>\n  {{#each event in content}}\n    <li>{{event.name}} -- {{event.location}}</li>\n  {{/each}}\n  </ul>\n{{else}}\n  <p> I\'m sorry. There are no events available yet!</p>\n{{/if}}\n");
