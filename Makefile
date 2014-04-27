@@ -1,13 +1,15 @@
-all: clean build copy run
+all: clean build copy build-gap run
 
 build:
-	cd ./app && ember build && cd ..
+	cd ./app && ember build production && cd ..
+
+build-gap:
+	phonegap build ios
 
 copy:
 	cp -r ./app/dist/* ./www 
 
 run:
-	phonegap build ios
 	phonegap run ios
 
 logs:
