@@ -20,14 +20,12 @@
     <script>
       document.addEventListener('deviceready', function (id) {
         console.log('Received Event: ' + id); 
-      }, false);
-
-      $(function () {
         window.App = require('app/main')['default']('app');
         Ember.run.next(function(){
           window.App.__container__.lookup("controller:events").transitionToRoute("/");
         });
-      });
+      }, false);
+
     </script>
   </body>
 </html>
