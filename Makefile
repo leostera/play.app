@@ -1,4 +1,4 @@
-all: clean build copy build-gap run
+all: clean build copy build-gap
 
 build:
 	cd ./app && ember build production && cd ..
